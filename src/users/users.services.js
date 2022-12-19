@@ -27,7 +27,6 @@ const getUserById = (req, res) => {
 }
 
 const postUser = (req, res) => {
-
     const {first_name, last_name, user_name, email, password, age, country} = req.body
 
     userControllers.createUser({first_name, last_name, user_name, email, password, age, country})
@@ -89,6 +88,3 @@ module.exports = {
     patchUser,
     deleteUser
 }
-
-
-
